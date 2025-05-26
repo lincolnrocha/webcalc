@@ -25,9 +25,6 @@ jobs:
     - name: Install Package
       run: |
         poetry install
-    - name: Run WebCalc App
-      run: |
-        poetry run python -u -m webcalc.app        
     - name: Test with Unittest
       run: |
         poetry run python -u -m unittest discover tests
